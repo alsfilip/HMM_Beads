@@ -2,7 +2,7 @@ The goal of this analysis is to identify the number of subjects we would need to
 
 Load correlations for low and high hazard in auditory 2 alternative forced choice data (A2AFC data)
 ```{r}
-adat = read.csv('.../data/A2AFC_PI.csv')
+adat = read.csv('/Users/alsfilip/Dropbox/Penn/HMM_Beads/Pregistration/data/A2AFC_PI.csv')
 adat$Hazard = factor(adat$Hazard,labels=c('H=0.01','H=0.99'))
 ```
 
@@ -71,9 +71,9 @@ Here is where I do the actual simulation
 ```{r,echo=FALSE,message=FALSE}
 nboot = 25 #Number of iterations
 n = 60     #Number of subject
-#bfs = readRDS(paste('./bfs_null_',n,'.rds'))
-#bfs = c(bfs,sapply(1:nboot,function(i) get_bf(n,0,h1_coefs[[1]],exp(h1_coefs[[2]]+h1_coefs[[3]]))))
-bfs = sapply(1:nboot,function(i) get_bf(n,0,h1_coefs[[1]],exp(h1_coefs[[2]]+h1_coefs[[3]])))
+bfs = readRDS(paste('./bfs_null_',n,'.rds'))
+bfs = c(bfs,sapply(1:nboot,function(i) get_bf(n,0,h1_coefs[[1]],exp(h1_coefs[[2]]+h1_coefs[[3]]))))
+#bfs = sapply(1:nboot,function(i) get_bf(n,0,h1_coefs[[1]],exp(h1_coefs[[2]]+h1_coefs[[3]])))
 saveRDS(bfs,paste('./bfs_null_',n,'.rds'))
 ```
 

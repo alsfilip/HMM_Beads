@@ -2,7 +2,7 @@ The goal of this analysis is to identify the number of subjects we would need to
 
 Load correlations for low and high hazard in auditory 2 alternative forced choice data (A2AFC data)
 ```{r}
-adat = read.csv('../data/A2AFC_PI.csv')
+adat = read.csv('.../data/A2AFC_PI.csv')
 adat$Hazard = factor(adat$Hazard,labels=c('H=0.01','H=0.99'))
 ```
 

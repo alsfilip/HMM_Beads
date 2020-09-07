@@ -1,0 +1,6 @@
+"trial_type","trial_index","time_elapsed","internal_node_id","Script_Picker","Block_Type","rt","url","responses","question_order"
+"pavlovia","0","28","0.0-0.0","12","Low_HMMActual","","","",""
+"external-html","1","6087","0.0-1.0-0.0","12","Low_HMMActual","5868.300000001909","consent.html","",""
+"survey-multi-choice","2","13160","0.0-1.0-1.0","12","Low_HMMActual","7063.799999988987","","{""Q0"":""Female"",""Q1"":""Hispanic or Latino""}","[0,1]"
+"survey-text","3","16125","0.0-1.0-2.0","12","Low_HMMActual","2939.5999999978812","","{""Q0"":""30""}",""
+"survey-text","4","21344","0.0-1.0-3.0","12","Low_HMMActual","5105.600000009872","","{""Q0"":""56ebadebcdfa81000d9e2b67""}",""
